@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+            .syringe::before{
+            content: '';
+            width: 480px;
+            height: 55px;
+            border: 1px solid rgb(182, 182, 182);
+            background-image: linear-gradient(0deg,rgb(234, 233, 233) 30%, rgb(206, 205, 205) 60%, rgb(227, 226, 226) 90%);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        .syringe{
+            width: 400px;
+            height: 80px;
+            border: 1px solid rgb(182, 181, 181);
+            background-image: linear-gradient(90deg,rgb(234, 233, 233) 50%, black 50%, black 60%,rgb(252, 252, 166) 60%);
+            color: rgb(165, 164, 164);
+            border-radius: 5px;
+        }
+        .d{
+            width: 400px;
+            height: 80px;
+            background-image: linear-gradient(0deg,rgba(234, 233, 233, 0.2) 30%, rgba(106, 103, 103, 0.2) 60%, rgba(227, 226, 226, 0.2) 90%);
+            border-radius: 5px;
+        }
+        .e{
+            width: 380px;
+            height: 20px;
+            margin-left: 10px;
+            background: repeating-linear-gradient(
+            90deg,
+            rgba(54, 54, 54, 0.5),
+            rgba(85, 86, 86, 0.5) 1px,
+            rgba(0, 0, 0, 0) 1px,
+            rgba(0, 0, 0, 0) 25px);
+        }
+        .syringe::after{
+            content: '';
+            width: 40px;
+            height: 80px;
+            border: 1px solid rgb(182, 182, 182);
+            background-image: linear-gradient(0deg,rgb(234, 233, 233) 30%, rgb(206, 205, 205) 60%, rgb(227, 226, 226) 90%);
+            position: absolute;
+            top: 0;
+            left: -80px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .text{
+            position:absolute;
+            bottom:0;
+        }
+        .hori-line {
+            width: 50px;
+            height: 1px;
+            border-top: solid #cececf 2px;
+            z-index: 1;
+            position: absolute;
+            right: -90px;
+            top: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="syringe">
+        <div class="d">
+            <div class="e">
+        <div class="hori-line"></div>
+        <div class="text">Made in Taiwan</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
